@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/roadiesp/!svn/ver/41/trunk/Roadies
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/roadiesp/!svn/ver/23/trunk/Roadies/.classpath
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/roadiesp/!svn/ver/4/trunk/Roadies/project.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/roadiesp/!svn/ver/3/trunk/Roadies/.project
+END
+proguard-project.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/roadiesp/!svn/ver/3/trunk/Roadies/proguard-project.txt
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/roadiesp/!svn/ver/33/trunk/Roadies/AndroidManifest.xml
+END

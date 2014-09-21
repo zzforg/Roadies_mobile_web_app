@@ -1,0 +1,149 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf320
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red63\green95\blue191;\red100\green100\blue100;\red127\green0\blue85;
+\red127\green159\blue191;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 Class: 
+\f1\fs22 LoginControllerTest\
+Methods:\
+	\cf2 /**\cf0 \
+\pard\pardeftab720
+\cf2 	 * Test that checks if the login method in the controller is returning the\cf0 \
+\cf2 	 * correct view\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testControllerLogin();\
+	\cf2 /**\cf0 \
+\cf2 	 * Test that checks if the logout method in the controller is returning the\cf0 \
+\cf2 	 * correct view\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testControllerLogout();\
+	\cf2 /**\cf0 \
+\cf2 	 * Test that checks if the login method in the controller is returning the\cf0 \
+\cf2 	 * correct view during invalid \ul username\ulnone /password\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testControllerLoginerror();\
+Class:JdbcCaseDAOtest\
+Methods:\
+	\cf2 /**\cf0 \
+\cf2 	 * Setting up common objects required during the test\cf0 \
+\cf2 	 * JdbcUserDAO, JdbcCaseDAO\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Before\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  setUp();\
+	\cf2 /**\cf0 \
+\cf2 	 * Method that tests the insertion of Case\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testInsertCase() ;\
+	\cf2 /**\cf0 \
+\cf2 	 * Method that tests finding the case by \ul username\cf0 \ulnone \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testFindByUsername();\
+	\cf2 /**\cf0 \
+\cf2 	 * Method to test finding the case by \ul uid\cf0 \ulnone \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testFindByUid();\
+	\
+Class:JdbcUserDAOTest\
+Methods:\
+	\cf2 /**\cf0 \
+\cf2 	 * Test setup that sets up the UserDAO and the DataSource\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Before\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  setUp();\
+	\cf2 /**\cf0 \
+\cf2 	 * Method that tests the insertion of user\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testInsertUser();\
+	\cf2 /**\cf0 \
+\cf2 	 * Method for testing finding user by \ul username\cf0 \ulnone \
+\cf2 	 */\cf0 \
+	\
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testFindByUsername();\
+	\cf2 /**\cf0 \
+\cf2 	 * Method to test finding user by user id\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testFindByUid();\
+Class:CaseModelTest\
+Methods:\
+	\cf2 /**\cf0 \
+\cf2 	 * Sets up the test class with a sample case\cf0 \
+\cf2 	 * \cf5 @throws\cf2  Exception\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Before\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  setUp() \cf4 throws\cf0  Exception;\
+	\cf2 /**\cf0 \
+\cf2 	 * Method that tests the getter and setters of Case Model\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  getterSetterTest();\
+Class:UserModelTest\
+Methods:\
+	\cf2 /**\cf0 \
+\cf2 	 * Sets up the test class with two sample users\cf0 \
+\cf2 	 * \cf5 @throws\cf2  Exception\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Before\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  setUp() \cf4 throws\cf0  Exception;\
+	\cf2 /**\cf0 \
+\cf2 	 * Tests the getter and setters for the User model class\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  getterSetterTest();\
+Class:CaseServiceImplTest\
+Methods:\
+	\cf2 /**\cf0 \
+\cf2 	 * Sets up the test classes with mock userDAO and caseDAO \cf0 \
+\cf2 	 * using \ul Mockito\ulnone  library and also create cases and user objects\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Before\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  setUp();\
+	\cf2 /**\cf0 \
+\cf2 	 * Method that tests the creation a case\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testCreateCase();\
+	\cf2 /**\cf0 \
+\cf2 	 * Method that test the getting case by id\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testGetCaseByUid();\
+	\cf2 /**\cf0 \
+\cf2 	 * Method that tests the getting case by \ul username\cf0 \ulnone \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testGetCaseByUsername();\
+Class:UserServiceImplTest\
+\
+Methods:\
+	\cf2 /**\cf0 \
+\cf2 	 * Setup method for the test class which creates a mock object\cf0 \
+\cf2 	 * for userDAO using \ul Mockito\ulnone  library\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Before\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  setUp();\
+	\cf2 /**\cf0 \
+\cf2 	 * Method that tests the user creation by the service class\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testCreateUser();\
+	\cf2 /**\cf0 \
+\cf2 	 * Method that tests the getting of user using the \ul username\cf0 \ulnone \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testGetUserByUsername();\
+	\cf2 /**\cf0 \
+\cf2 	 * Method that tests the getting of user by user id\cf0 \
+\cf2 	 */\cf0 \
+	\cf3 @Test\cf0 \
+	\cf4 public\cf0  \cf4 void\cf0  testGetUserByUserId().}

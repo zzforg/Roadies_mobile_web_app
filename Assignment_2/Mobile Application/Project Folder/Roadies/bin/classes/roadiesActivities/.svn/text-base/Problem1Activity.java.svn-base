@@ -1,0 +1,62 @@
+package roadiesActivities;
+
+import android.app.ListActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+
+/**
+ * 
+ * @author Dean Chen
+ * Create a problem listview activity, after that,
+ * problem chosen is recorded and a new page of details relating to this
+ * problem will be open.
+ *
+ */
+public class Problem1Activity extends ListActivity {
+	
+	protected ListAdapter adapter;;
+	private String[] values;
+	
+	/**
+	 * Create problem activity and show a list of repair problems
+	 * @param icicle bundle data type--get data from saved instance
+	 */
+	public void onCreate(Bundle icicle) {
+		super.onCreate(icicle);
+		
+		values = new String[] { "Brake", "Engine","Tyre","Battery"};
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+				android.R.layout.simple_list_item_1, values);
+		setListAdapter(adapter);	
+	}
+
+	@Override
+	/**
+	 * Triggers of next activity. After click, details of chosen problem will be shown;
+	 * this problem will be recorded. For prototype, we just form the detail list for 
+	 * "brake" issue.
+	 * 
+	 */
+	protected void onListItemClick(ListView l, View v, int position, long id) {
+		String item = (String) getListAdapter().getItem(position);
+		super.onListItemClick(l, v, position, id);
+	    Log.i("DebugMessage", "clicked an item..");
+	    // save problem related lists in bundle and pass it to next activity
+	    if (item.equals(values[0])) {
+	    	String[] narrowItems= new String[]{"Lagging", "Failure", "Brake Oil Leaking"};
+	    	Bundle bundle = new Bundle();
+	    	bundle.putStringArray("narrowItem", narrowItems);
+	    	bundle.putString("problem", item);
+			Intent i = new Intent(this, Problem2Activity.class);
+			i.putExtras(bundle);
+			finish();
+			startActivity(i);
+		}	
+	}
+	
+}

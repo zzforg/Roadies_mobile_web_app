@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/roadiesp/!svn/ver/31/trunk/roadiesapp/WebContent/WEB-INF
+END
+spring-context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/roadiesp/!svn/ver/31/trunk/roadiesapp/WebContent/WEB-INF/spring-context.xml
+END
+spring-database.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/roadiesp/!svn/ver/31/trunk/roadiesapp/WebContent/WEB-INF/spring-database.xml
+END
+spring-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/roadiesp/!svn/ver/31/trunk/roadiesapp/WebContent/WEB-INF/spring-servlet.xml
+END
+spring-security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/roadiesp/!svn/ver/31/trunk/roadiesapp/WebContent/WEB-INF/spring-security.xml
+END
+spring-rest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/roadiesp/!svn/ver/31/trunk/roadiesapp/WebContent/WEB-INF/spring-rest.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/roadiesp/!svn/ver/31/trunk/roadiesapp/WebContent/WEB-INF/web.xml
+END

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-size:100%;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+#header {
+	margin:0 auto;
+	width:372px;
+	height:41px;
+	}
+	
+#bodytext {
+	margin:0 auto;
+	width:359px;
+	height:24px;
+	}
+	
+#textleft {
+	margin:0 auto;
+	position: left;
+	}
+	
+#textright {
+	margin:0 auto;
+	position: right;
+	}
+
+#bottombar {
+	margin:0 auto;
+	width:372px;
+	height:41px;
+	}

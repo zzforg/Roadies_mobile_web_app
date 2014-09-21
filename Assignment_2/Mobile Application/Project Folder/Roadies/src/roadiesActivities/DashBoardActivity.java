@@ -1,0 +1,67 @@
+package roadiesActivities;
+
+import roadies.login.R;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ImageButton;
+
+/**
+ * This is a prototype dashboard activity which perform as the menu of the
+ * Roadies project. This prototype has nine buttons, which only the first one
+ * process to the car problems.
+ * 
+ * @author Gary
+ * 
+ */
+public class DashBoardActivity extends Activity {
+
+	/*
+	 * Define two ImageButton types
+	 */
+	private ImageButton button1;
+	private ImageButton quit;
+
+	/**
+	 * Initializes the application and the activity. 1. Sets the view 2.
+	 * Instantiates button listeners to the problem button and a quit button
+	 * 
+	 * @see android.app.Activity#onCreate(android.os.Bundle)
+	 */
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.dashboard);
+
+		/*
+		 * Assign the ImageButton in xml view file to button1 by id.
+		 */
+		button1 = (ImageButton) findViewById(R.id.problem1);
+		button1.setOnClickListener(new View.OnClickListener() {
+			/**
+			 * This onClick method is activated when the first image button call
+			 * "report accident" is clicked. This method starts the problem 1
+			 * activity and close this.
+			 */
+			public void onClick(View v) {
+				Intent i = new Intent(DashBoardActivity.this,
+						Problem1Activity.class);
+				startActivity(i);
+				finish();
+			}
+		});
+
+		quit = (ImageButton) findViewById(R.id.quit);
+		quit.setOnClickListener(new View.OnClickListener() {
+			/**
+			 * This method simply end the DashBoardActivity for testing purpose.
+			 * It should be the "HELP" button to access helpActicity
+			 */
+			public void onClick(View v) {
+				finish();
+			}
+		});
+	}
+}
